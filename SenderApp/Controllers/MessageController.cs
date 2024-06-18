@@ -16,12 +16,7 @@ public class MessageController : ControllerBase
 		_bus = bus;
 		_logger = logger;
 	}
-
-	[HttpGet]
-	public string Test()
-	{
-		return "test";
-	}
+	
 	[HttpPost]
 	public async Task<IActionResult> SendMessage(Message message)
 	{
